@@ -3,7 +3,6 @@ import mongoose, { Document, Schema, Model } from "mongoose";
 export interface Project extends Document {
     title: string;
     description: string;
-    coverImage: string;
     firstTechnology: string;
     secondTechnology: string;
     thirdTechnology: string;
@@ -25,11 +24,9 @@ const ProjectsSchema: Schema = new mongoose.Schema({
     },
     secondTechnology: {
         type: String,
-        required: true
     },
     thirdTechnology: {
         type: String,
-        required: true
     },
     deployedUrl: {
         type: String,
