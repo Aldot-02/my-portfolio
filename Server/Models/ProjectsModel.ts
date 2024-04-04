@@ -7,6 +7,7 @@ export interface Project extends Document {
     firstTechnology: string;
     secondTechnology: string;
     thirdTechnology: string;
+    deployedUrl: string;
 }
 
 const ProjectsSchema: Schema = new mongoose.Schema({
@@ -27,6 +28,10 @@ const ProjectsSchema: Schema = new mongoose.Schema({
         required: true
     },
     thirdTechnology: {
+        type: String,
+        required: true
+    },
+    deployedUrl: {
         type: String,
         required: true
     }
