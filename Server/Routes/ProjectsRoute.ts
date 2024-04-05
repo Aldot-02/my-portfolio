@@ -5,7 +5,7 @@ import { isAuthenticated } from '../Middlewares/middlewares';
 const router: Router = express.Router();
 
 
-router.post('/', isAuthenticated, createProject);
+router.post('/', createProject);
 router.get('/all', getAllProjects);
 router.get('/:id', getProject);
 router.patch('/:id', isAuthenticated, updateProject);
