@@ -15,7 +15,7 @@ export const app: Application = express();
 // MIDDLEWARES
 app.use(cors({
     credentials: true,
-    origin: ['https://my-brand-backend-aldo-1.onrender.com', 'http://localhost:3000', 'https://aldot.netlify.app']
+    origin: ['https://my-brand-backend-aldo-1.onrender.com', 'http://localhost:3000', 'https://aldo-v1.netlify.app']
 }));
 app.use(bodyParser.json({ limit: '30mb'}));
 app.use(bodyParser.urlencoded({ limit: '30mb', extended: true }));
